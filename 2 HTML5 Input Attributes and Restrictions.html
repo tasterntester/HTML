@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+
+<h2>Text input fields</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+
+<h1>Display a Password Field</h1>
+
+<form action="/action_page.php">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  <input type="submit">
+</form>
+
+
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+h1>The button Element</h1>
+
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+ 
+
+
+<h2>Number Field</h2>
+
+
+<form action="/action_page.php">
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <input type="submit" value="Submit">
+</form>
+
+
+<title>HTML5 Range Input Type</title>
+<script>
+    function getValue() {
+        var number = document.getElementById("mynumber").value;
+        alert(number);
+	
+		var color = document.getElementById("mycolor").value;
+        alert(color);
+		
+		var date = document.getElementById("mydate").value;
+        alert(date);
+	
+		var time = document.getElementById("mytime").value;
+        alert(time);
+	
+		var month = document.getElementById("mymonth").value;
+        alert(month);
+	
+		var week = document.getElementById("myweek").value;
+        alert(week);
+	
+		var email = document.getElementById("myemail").value;
+        alert(email);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mynumber">Select a Number:</label>
+        <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+        <button type="button" onclick="getValue();">Get Value</button>
+    <br/>
+	</form>
+	<form>
+ 
+        <label for="mycolor">Select Color:</label>
+        <input type="color" value="#00ff00" id="mycolor">
+        <button type="button" onclick="getValue();">Get Value</button>
+    <br/>
+	</form>
+	<form>
+	
+	
+        <label for="mydate">Select Date:</label>
+        <input type="date" value="2019-04-15" id="mydate">
+        <button type="button" onclick="getValue();">Get Value</button>	
+	<br/>
+	</form>
+	<form>
+	
+	    <label for="mytime">Select Time:</label>
+        <input type="time" id="mytime">
+        <button type="button" onclick="getValue();">Get Value</button>
+	<br/>
+	</form>
+	<form>
+	
+	    <label for="mymonth">Select Month:</label>
+        <input type="month" id="mymonth">
+        <button type="button" onclick="getValue();">Get Value</button>
+	<br/>
+	</form>
+	<form>
+	
+	
+        <label for="myweek">Select Week:</label>
+        <input type="week" id="myweek">
+        <button type="button" onclick="getValue();">Get Value</button>
+	<br/>
+	</form>
+	<form>
+	
+	    <label for="myemail">Enter Email Address:</label>
+        <input type="email" id="myemail" required>
+        <button type="button" onclick="getValue();">Get Value</button>
+	
+    </form>
+<br/>
+
+<<h1>The input disabled attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" disabled><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br/>
+
+<h1>The input max and min attributes</h1>
+
+<form action="/action_page.php">
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+  <input type="submit">
+</form>
+<br/>
+
+<h1>The input maxlength attribute</h1>
+
+<form action="/action_page.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" maxlength="10"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<br/>
+
+<h1>The input readonly attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="country">Country:</label>  
+  <input type="text" id="country" name="country" value="Norway" readonly><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br/>
+
+<h1>The input size attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" size="50"><br><br>
+  <label for="pin">PIN:</label>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br/>
+
+<h1>The input required attribute</h1>
+
+<form action="/action_page.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit">
+</form>
+<br/>
+
+<h1>The a target attribute</h1>
+
+<p>Open link in a new window or tab: <a href="https://www.youtube.com" target="_blank">Visit YouTube!</a></p>
+
+<br/>
+
+<h1>The iframe element</h1>
+
+<iframe src="https://www.facebook.com" title="Facebook Tutorials">
+</iframe>
+
+<br/>
+</body>
+</html>
+
+
+
+
+
+
