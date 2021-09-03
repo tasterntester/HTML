@@ -1,4 +1,13 @@
 # HTML ASSIGNMENTS
+## *HTML Basics Questions
+1. Understand the basics.html which was already created
+2. Develop your own web page basics.html with all the following html tags
+Html, head, title, body
+Heading, Paragraph, Italic, Bold, Anchor, Unordered List, List Item, label,
+Blockquote, Horizontal rule, Image, Division, Span
+
+3. Navigate within the page to a different section.
+
 ## Difference in JavaScript, HTML, and CSS
 
 Lets consider a web page as a human body. Now let's see what each of these language really do:
