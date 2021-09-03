@@ -1,4 +1,4 @@
-# HTML
+# HTML ASSIGNMENTS
 ## Difference in JavaScript, HTML, and CSS
 
 Lets consider a web page as a human body. Now let's see what each of these language really do:
